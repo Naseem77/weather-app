@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    
+    <div class="container">
+        <input type="text" id="input" placeholder="&nbsp;">
+        <button class="searchBtn">Search</button>
+    </div>  
+    <div class="weather-container"></div>
+           
+
+        <script id="cities-template" type="text/x-handlebars-template">  
+            {{#each cities}}
+                <div class="weather-card">
+                    <div class="btns">
+                        <button class="saveBtn">Save</button>
+                        <button class="removeBtn">Remove</button>
+                    </div>
+                    <img class="image" src="{{conditionPic}}" alt="No Photo">
+                    <h1 id="temp">{{temperature}}</h1>
+                    <h1 id="condition">{{condition}}</h1>
+                    <h2 >{{name}}</h2>
+                </div>
+              {{/each}}
+          </script>
+ 
+
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controller.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+body {
+  background-color: #d4dade
+}
+
+.btns {
+  text-align: center;
+}
+.container {
+  text-align: center;
+}
+.image{
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
+  height: 100px;
+}
+.searchBtn {
+  height: 40px;
+  width: 20%;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  cursor: pointer;
+  height: 40px;
+  width: 20%;
+}
+.image {
+  position: absolute;
+  bottom: 15px;
+}
+
+.removeBtn {
+  position: absolute;
+  background-color: rgba(115, 115, 115, 0.3);
+  color: black;
+  border: 2px solid #555555;
+  cursor: pointer;
+  height: 20%;
+  width: 25%;
+  bottom: 3px;
+  right: 20px;
+  border-radius: 10px;
+}
+.saveBtn {
+  position: absolute;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  cursor: pointer;
+  height: 20%;
+  width: 25%;
+  bottom: 3px;
+  right: 100px;
+  border-radius: 10px;
+}
+
+#input {
+  position: relative;
+  margin: 30px;
+  width: 100%;
+  height: 40px;
+  max-width: 70%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.weather-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-card {
+  margin: 20px 5px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  animation: appear 500ms ease-out forwards;
+  text-align: center;
+}
+
+#temp {
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  color: #b8b8b8;
+  top: 15px;
+  left: 35px;
+  opacity: 0;
+  transform: translateX(150px);
+  animation: title-appear 500ms ease-out 500ms forwards;
+}
+
+#condition {
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  color: #b8b8b8;
+  top: 0;
+  right: 5px;
+  opacity: 0;
+  transform: translateX(150px);
+  animation: title-appear 500ms ease-out 500ms forwards;
+}
+
+h2 {
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  top: 0;
+  left: 35px;
+  animation: title-appear 1s ease-out 500ms forwards;
+}
+
+.weather-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 5px;
+  margin: 40px 40px 0 0;
+  animation: weather-icon-move 50s ease-in infinite;
+}
+
+
+@keyframes weather-icon-move {
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  75% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes title-appear {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
