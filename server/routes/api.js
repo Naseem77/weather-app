@@ -48,7 +48,7 @@ router.post("/city", function (req, res) {
           conditionPic: `http://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png`
         })
       newCity.save()
-      res.send("completed adding city");
+      res.send("city added");
     }
   );
 });
