@@ -4,6 +4,8 @@
 
 Weather app in Full Stack - client using OOP and MVC design, server access an external API, and save data to a MongoDB database with CRUD operations.
 
+Heroku: https://weatherapp771.herokuapp.com/
+
 # Technologies:
 - OOP
 - MVC
@@ -14,5 +16,6 @@ Weather app in Full Stack - client using OOP and MVC design, server access an ex
 - urllib
 - API's
 - Handlerbars
+- Heroku
 
 <img width="1178" alt="Screen Shot 2022-05-21 at 13 07 01" src="https://user-images.githubusercontent.com/34807727/169646677-15c5325f-f207-4f79-9261-adc98f77c63a.png">
